@@ -15,7 +15,7 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
-body { padding-top: 100px; }
+body { padding-top: 100px; background-color: #deeff5;}
 footer { margin-top: 100px; }
 table, td, th { vertical-align: middle; border: none; }
 th { border-bottom: 1px solid #DDD; }
@@ -26,3 +26,19 @@ img {
 .table tbody tr:hover td, .table tbody tr:hover th {
     background-color: #E6E6FA;
 }
+.headbar {
+  background-color: #c5e3ed
+}
+.headers {
+font-family: "Lucida Console", lucida, monospace;
+  font-style: italic;
+  color: #767676
+}
+h1 {
+  font-family: "Lucida Console", lucida, monospace;
+    color: #767676
+}
+label {
+  font-family: "Lucida Console", lucida, monospace;
+  font-weight: bold;
+  color: #767676}

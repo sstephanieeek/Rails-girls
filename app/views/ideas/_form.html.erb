@@ -11,20 +11,39 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name, id: :idea_name %>
-  </div>
+<form class="form-horizontal">
 
-  <div class="field">
-    <%= form.label :description %>
-    <%= form.text_area :description, id: :idea_description %>
-  </div>
+  <div class="form-group">
+      <label class="col-sm-2 control-label">Name</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="new-name" placeholder="Name">
+      </div>
 
-  <div class="field">
-    <%= form.label :picture %>
-    <%= form.file_field :picture, id: :idea_picture %>
-  </div>
+      <div class="form-group">
+          <label class="col-sm-2 control-label">Description</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="new-description" placeholder="Description">
+          </div>
+
+  <div class="form-group">
+     <label class="col-sm-2 control-label">Email address</label>
+     <div class="col-sm-10">
+     <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+</div>
+   </div>
+
+   <div class="form-group">
+     <label class="col-sm-2 control-label">Picture</label>
+      <div class="btn btn-default col-sm-10">
+     <input type="file" id="exampleInputFile">
+     <p class="help-block">Upload a picture to represent and visualise your idea.</p>
+</div>
+   </div>
+   <div class="checkbox">
+     <label>
+       <input type="checkbox"> I hereby agree that the author is awesome.
+     </label>
+   </div>
 
   <div class="actions">
     <%= form.submit %>
