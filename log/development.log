@@ -1,0 +1,2001 @@
+Started GET "/" for 127.0.0.1 at 2017-05-13 10:18:10 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/stephanie.kraaijkamp/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/stephanie.kraaijkamp/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb (4.2ms)
+Completed 200 OK in 263ms (Views: 12.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 10:18:52 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/stephanie.kraaijkamp/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/stephanie.kraaijkamp/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb (2.6ms)
+Completed 200 OK in 7ms (Views: 4.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 10:18:54 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/stephanie.kraaijkamp/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/stephanie.kraaijkamp/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb (2.7ms)
+Completed 200 OK in 7ms (Views: 5.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 10:18:59 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/stephanie.kraaijkamp/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/stephanie.kraaijkamp/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb (2.7ms)
+Completed 200 OK in 8ms (Views: 5.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 10:19:46 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/stephanie.kraaijkamp/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/stephanie.kraaijkamp/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb (2.7ms)
+Completed 200 OK in 9ms (Views: 5.4ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateIdeas (20170513082304)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "ideas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "picture" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170513082304"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-05-13 08:23:15.451754"], ["updated_at", "2017-05-13 08:23:15.451754"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 10:23:31 +0200
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 284ms (Views: 273.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/ideas/new" for 127.0.0.1 at 2017-05-13 10:23:58 +0200
+Processing by IdeasController#new as HTML
+  Rendering ideas/new.html.erb within layouts/application
+  Rendered ideas/_form.html.erb (24.7ms) [cache miss]
+  Rendered ideas/new.html.erb within layouts/application (26.8ms)
+Completed 200 OK in 51ms (Views: 43.6ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/ideas" for 127.0.0.1 at 2017-05-13 10:24:45 +0200
+Processing by IdeasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tYcXhBPaeA9kM0eSo/mNeKM3jBXNy4xZeWMQD06ksU+HKqBpfgFlrYc1JYEyppMD5GaViDl5pMLDxdvfFhGRQg==", "idea"=>{"name"=>"Stephanie K", "description"=>"Making an app with the cutest dogs in the world", "picture"=>""}, "commit"=>"Create Idea"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "ideas" ("name", "description", "picture", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Stephanie K"], ["description", "Making an app with the cutest dogs in the world"], ["picture", ""], ["created_at", "2017-05-13 08:24:45.827434"], ["updated_at", "2017-05-13 08:24:45.827434"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/ideas/1
+Completed 302 Found in 5ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/ideas/1" for 127.0.0.1 at 2017-05-13 10:24:45 +0200
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ideas/show.html.erb within layouts/application
+  Rendered ideas/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 26ms (Views: 19.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 10:25:11 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 28ms (Views: 27.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas/new" for 127.0.0.1 at 2017-05-13 10:25:18 +0200
+Processing by IdeasController#new as HTML
+  Rendering ideas/new.html.erb within layouts/application
+  Rendered ideas/_form.html.erb (3.7ms) [cache miss]
+  Rendered ideas/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 31ms (Views: 30.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/ideas" for 127.0.0.1 at 2017-05-13 10:25:32 +0200
+Processing by IdeasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AEAT+L6hW1m1A1DGYIaNLKnccj8c/gRQ39Ll72L6NuEy7aQV03pG+1YFMtXx2ZNX7o1rouhMLMtldC4/Ok8W7A==", "idea"=>{"name"=>"Stephanie ", "description"=>"Making an app with education ideas", "picture"=>""}, "commit"=>"Create Idea"}
+  [1m[35m (0.6ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "ideas" ("name", "description", "picture", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Stephanie "], ["description", "Making an app with education ideas"], ["picture", ""], ["created_at", "2017-05-13 08:25:32.305784"], ["updated_at", "2017-05-13 08:25:32.305784"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/ideas/2
+Completed 302 Found in 4ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/ideas/2" for 127.0.0.1 at 2017-05-13 10:25:32 +0200
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mIdea Load (0.1ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering ideas/show.html.erb within layouts/application
+  Rendered ideas/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 26ms (Views: 25.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 10:25:34 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 29ms (Views: 27.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas/new" for 127.0.0.1 at 2017-05-13 10:25:35 +0200
+Processing by IdeasController#new as HTML
+  Rendering ideas/new.html.erb within layouts/application
+  Rendered ideas/_form.html.erb (2.1ms) [cache miss]
+  Rendered ideas/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 20ms (Views: 19.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/ideas" for 127.0.0.1 at 2017-05-13 10:26:07 +0200
+Processing by IdeasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QKOf2s1H/zSHZlOkdx6LTBHaUyAEt9gHvAhG98REMq1yDig3oJzilmRgMbfmQZU3VotKvfAF8JwGro0nnPESoA==", "idea"=>{"name"=>"Teresa", "description"=>"Making an app for Klarnauts to give eachother shout outs and love messages", "picture"=>""}, "commit"=>"Create Idea"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ideas" ("name", "description", "picture", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Teresa"], ["description", "Making an app for Klarnauts to give eachother shout outs and love messages"], ["picture", ""], ["created_at", "2017-05-13 08:26:07.933751"], ["updated_at", "2017-05-13 08:26:07.933751"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/ideas/3
+Completed 302 Found in 3ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/ideas/3" for 127.0.0.1 at 2017-05-13 10:26:07 +0200
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mIdea Load (0.1ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering ideas/show.html.erb within layouts/application
+  Rendered ideas/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 10:26:10 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 19ms (Views: 18.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 10:39:32 +0200
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (9.2ms)
+Completed 500 Internal Server Error in 187ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: bootstrap-sprockets.
+Load paths:
+  /Users/stephanie.kraaijkamp/projects/projects/railsgirls/app/assets/config
+  /Users/stephanie.kraaijkamp/projects/projects/railsgirls/app/assets/images
+  /Users/stephanie.kraaijkamp/projects/projects/railsgirls/app/assets/javascripts
+  /Users/stephanie.kraaijkamp/projects/projects/railsgirls/app/assets/stylesheets
+  /Users/stephanie.kraaijkamp/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.1/lib/assets/javascripts
+  /Users/stephanie.kraaijkamp/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actioncable-5.1.1/lib/assets/compiled
+  /Users/stephanie.kraaijkamp/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionview-5.1.1/lib/assets/compiled
+  /Users/stephanie.kraaijkamp/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /Users/stephanie.kraaijkamp/projects/projects/railsgirls/node_modules):
+    4:     <title>Railsgirls</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/stylesheets/application.css.scss:17
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__789332164160145438_70231684876060'
+app/controllers/ideas_controller.rb:4:in `index'
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 10:39:34 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: bootstrap-sprockets.
+Load paths:
+  /Users/stephanie.kraaijkamp/projects/projects/railsgirls/app/assets/config
+  /Users/stephanie.kraaijkamp/projects/projects/railsgirls/app/assets/images
+  /Users/stephanie.kraaijkamp/projects/projects/railsgirls/app/assets/javascripts
+  /Users/stephanie.kraaijkamp/projects/projects/railsgirls/app/assets/stylesheets
+  /Users/stephanie.kraaijkamp/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.1/lib/assets/javascripts
+  /Users/stephanie.kraaijkamp/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actioncable-5.1.1/lib/assets/compiled
+  /Users/stephanie.kraaijkamp/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionview-5.1.1/lib/assets/compiled
+  /Users/stephanie.kraaijkamp/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /Users/stephanie.kraaijkamp/projects/projects/railsgirls/node_modules):
+    4:     <title>Railsgirls</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/stylesheets/application.css.scss:17
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__789332164160145438_70231734446180'
+app/controllers/ideas_controller.rb:4:in `index'
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 10:44:35 +0200
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (9.7ms)
+Completed 500 Internal Server Error in 180ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: bootstrap-sprockets.
+Load paths:
+  /Users/stephanie.kraaijkamp/projects/projects/railsgirls/app/assets/config
+  /Users/stephanie.kraaijkamp/projects/projects/railsgirls/app/assets/images
+  /Users/stephanie.kraaijkamp/projects/projects/railsgirls/app/assets/javascripts
+  /Users/stephanie.kraaijkamp/projects/projects/railsgirls/app/assets/stylesheets
+  /Users/stephanie.kraaijkamp/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.1/lib/assets/javascripts
+  /Users/stephanie.kraaijkamp/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actioncable-5.1.1/lib/assets/compiled
+  /Users/stephanie.kraaijkamp/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionview-5.1.1/lib/assets/compiled
+  /Users/stephanie.kraaijkamp/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /Users/stephanie.kraaijkamp/projects/projects/railsgirls/node_modules):
+    4:     <title>Railsgirls</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/stylesheets/application.css.scss:17
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__3246038390690503998_70133065417840'
+app/controllers/ideas_controller.rb:4:in `index'
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 10:46:32 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.1ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: bootstrap-sprockets.
+Load paths:
+  /Users/stephanie.kraaijkamp/projects/projects/railsgirls/app/assets/config
+  /Users/stephanie.kraaijkamp/projects/projects/railsgirls/app/assets/images
+  /Users/stephanie.kraaijkamp/projects/projects/railsgirls/app/assets/javascripts
+  /Users/stephanie.kraaijkamp/projects/projects/railsgirls/app/assets/stylesheets
+  /Users/stephanie.kraaijkamp/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.1/lib/assets/javascripts
+  /Users/stephanie.kraaijkamp/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actioncable-5.1.1/lib/assets/compiled
+  /Users/stephanie.kraaijkamp/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionview-5.1.1/lib/assets/compiled
+  /Users/stephanie.kraaijkamp/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /Users/stephanie.kraaijkamp/projects/projects/railsgirls/node_modules):
+    4:     <title>Railsgirls</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/stylesheets/application.css.scss:17
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__3246038390690503998_70133078321520'
+app/controllers/ideas_controller.rb:4:in `index'
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 10:47:24 +0200
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 3039ms (Views: 3029.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 10:50:56 +0200
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 376ms (Views: 365.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 10:58:26 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.1ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 103ms (Views: 95.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/ideas/new" for 127.0.0.1 at 2017-05-13 10:58:39 +0200
+Processing by IdeasController#new as HTML
+  Rendering ideas/new.html.erb within layouts/application
+  Rendered ideas/_form.html.erb (31.9ms) [cache miss]
+  Rendered ideas/new.html.erb within layouts/application (34.4ms)
+Completed 200 OK in 75ms (Views: 74.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/ideas" for 127.0.0.1 at 2017-05-13 10:59:53 +0200
+Processing by IdeasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kswkQVwP1pWvCPeUAGLQJ5+lQs+k0s4urZhg28IVwDigYZOsMdTLN0wOlYeRPc5c2PRbUlBg5rUXPqsLmqDgNQ==", "idea"=>{"name"=>"Steph", "description"=>"Share internally learning and teaching styles for better understanding of cross department learning", "picture"=>#<ActionDispatch::Http::UploadedFile:0x007fb01793fde0 @tempfile=#<Tempfile:/var/folders/_1/yrk4xdsd31jfsm_3q95sy08187v28l/T/RackMultipart20170513-3647-b0w6n7.png>, @original_filename="Teaching styles.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"idea[picture]\"; filename=\"Teaching styles.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create Idea"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "ideas" ("name", "description", "picture", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Steph"], ["description", "Share internally learning and teaching styles for better understanding of cross department learning"], ["picture", "Teaching_styles.png"], ["created_at", "2017-05-13 08:59:53.846842"], ["updated_at", "2017-05-13 08:59:53.846842"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/ideas/4
+Completed 302 Found in 111ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/ideas/4" for 127.0.0.1 at 2017-05-13 10:59:53 +0200
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering ideas/show.html.erb within layouts/application
+  Rendered ideas/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 44ms (Views: 40.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 10:59:56 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 48ms (Views: 47.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:00:22 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 43ms (Views: 42.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:00:26 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 44ms (Views: 43.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:00:40 +0200
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 381ms (Views: 369.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:00:42 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 72ms (Views: 71.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:00:43 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 87ms (Views: 86.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:03:25 +0200
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 406ms (Views: 390.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:10:39 +0200
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 380ms (Views: 368.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:10:49 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.1ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 57ms (Views: 55.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:11:27 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 77ms (Views: 75.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas/new" for 127.0.0.1 at 2017-05-13 11:11:32 +0200
+Processing by IdeasController#new as HTML
+  Rendering ideas/new.html.erb within layouts/application
+  Rendered ideas/_form.html.erb (32.7ms) [cache miss]
+  Rendered ideas/new.html.erb within layouts/application (35.1ms)
+Completed 200 OK in 89ms (Views: 88.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/ideas" for 127.0.0.1 at 2017-05-13 11:12:03 +0200
+Processing by IdeasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TGvGpFTwK5c1b9/humnClQNPgg2v0VrDnZXdOp1CiY5+xnFJOSs2NdZpvfIrNtzuRB6bkFtjclgnMxbqxfepgw==", "idea"=>{"name"=>"Bla", "description"=>"", "picture"=>#<ActionDispatch::Http::UploadedFile:0x007fd8a67bca60 @tempfile=#<Tempfile:/var/folders/_1/yrk4xdsd31jfsm_3q95sy08187v28l/T/RackMultipart20170513-4044-tj0y5a.png>, @original_filename="Male avatar.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"idea[picture]\"; filename=\"Male avatar.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create Idea"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "ideas" ("name", "description", "picture", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Bla"], ["description", ""], ["picture", "Male_avatar.png"], ["created_at", "2017-05-13 09:12:03.970571"], ["updated_at", "2017-05-13 09:12:03.970571"]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/ideas/5
+Completed 302 Found in 9ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/ideas/5" for 127.0.0.1 at 2017-05-13 11:12:03 +0200
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering ideas/show.html.erb within layouts/application
+  Rendered ideas/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 50ms (Views: 46.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:12:09 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 52ms (Views: 51.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas/5" for 127.0.0.1 at 2017-05-13 11:12:14 +0200
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mIdea Load (0.1ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering ideas/show.html.erb within layouts/application
+  Rendered ideas/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 54ms (Views: 52.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/ideas/4" for 127.0.0.1 at 2017-05-13 11:12:19 +0200
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering ideas/show.html.erb within layouts/application
+  Rendered ideas/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 46ms (Views: 44.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:13:13 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (6.6ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `picture' for nil:NilClass):
+    17:       <tr>
+    18:         <td><%= idea.name %></td>
+    19:         <td><%= idea.description %></td>
+    20:         <td><%= image_tag(@idea.picture_url) if @idea.picture.present? %></td>
+    21:         <td><%= link_to 'Show', idea %></td>
+    22:         <td><%= link_to 'Edit', edit_idea_path(idea) %></td>
+    23:         <td><%= link_to 'Destroy', idea, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  
+app/views/ideas/index.html.erb:20:in `block in _app_views_ideas_index_html_erb___1958756178424997967_70284248182440'
+app/views/ideas/index.html.erb:16:in `_app_views_ideas_index_html_erb___1958756178424997967_70284248182440'
+app/controllers/ideas_controller.rb:4:in `index'
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:14:53 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 42ms (Views: 41.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:33:05 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 1740ms (Views: 1739.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:33:23 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 1390ms (Views: 1389.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:34:33 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.1ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 72ms (Views: 65.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 11:34:37 +0200
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:34:37 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 54ms (Views: 52.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:34:39 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 65ms (Views: 63.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 11:34:41 +0200
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:34:41 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 45ms (Views: 44.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 11:34:43 +0200
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:34:43 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 50ms (Views: 49.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pages/info" for 127.0.0.1 at 2017-05-13 11:36:49 +0200
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#info as HTML
+  Rendering pages/info.html.erb within layouts/application
+  Rendered pages/info.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 636ms (Views: 627.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/info" for 127.0.0.1 at 2017-05-13 11:38:37 +0200
+Processing by PagesController#info as HTML
+  Rendering pages/info.html.erb within layouts/application
+  Rendered pages/info.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 48ms (Views: 46.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/info" for 127.0.0.1 at 2017-05-13 11:39:09 +0200
+Processing by PagesController#info as HTML
+  Rendering pages/info.html.erb within layouts/application
+  Rendered pages/info.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 74ms (Views: 71.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 11:39:41 +0200
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:39:41 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 79ms (Views: 69.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/ideas/1/edit" for 127.0.0.1 at 2017-05-13 11:40:36 +0200
+Processing by IdeasController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ideas/edit.html.erb within layouts/application
+  Rendered ideas/_form.html.erb (18.3ms) [cache miss]
+  Rendered ideas/edit.html.erb within layouts/application (20.6ms)
+Completed 200 OK in 68ms (Views: 63.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:40:40 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 58ms (Views: 57.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:41:22 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 48ms (Views: 47.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas/5" for 127.0.0.1 at 2017-05-13 11:41:27 +0200
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mIdea Load (0.8ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering ideas/show.html.erb within layouts/application
+  Rendered ideas/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 51ms (Views: 46.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:41:28 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 55ms (Views: 54.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 11:41:29 +0200
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:41:29 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 52ms (Views: 51.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas/1/edit" for 127.0.0.1 at 2017-05-13 11:41:29 +0200
+Processing by IdeasController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ideas/edit.html.erb within layouts/application
+  Rendered ideas/_form.html.erb (1.9ms) [cache miss]
+  Rendered ideas/edit.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 65ms (Views: 63.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas/5" for 127.0.0.1 at 2017-05-13 11:41:32 +0200
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mIdea Load (0.1ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering ideas/show.html.erb within layouts/application
+  Rendered ideas/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 47ms (Views: 45.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:41:34 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.3ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 51ms (Views: 50.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:41:34 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 71ms (Views: 69.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas/4" for 127.0.0.1 at 2017-05-13 11:41:34 +0200
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering ideas/show.html.erb within layouts/application
+  Rendered ideas/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 71ms (Views: 69.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/info" for 127.0.0.1 at 2017-05-13 11:41:40 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/info"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.2) lib/rack/method_override.rb:22:in `call'
+rack (2.0.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.2) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/pages_info_path" for 127.0.0.1 at 2017-05-13 11:41:47 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/pages_info_path"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.2) lib/rack/method_override.rb:22:in `call'
+rack (2.0.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.2) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-05-13 11:42:26 +0200
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:42:26 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 47ms (Views: 46.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pages/info" for 127.0.0.1 at 2017-05-13 11:42:38 +0200
+Processing by PagesController#info as HTML
+  Rendering pages/info.html.erb within layouts/application
+  Rendered pages/info.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 55ms (Views: 52.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:42:39 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 50ms (Views: 49.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pages/info" for 127.0.0.1 at 2017-05-13 11:42:40 +0200
+Processing by PagesController#info as HTML
+  Rendering pages/info.html.erb within layouts/application
+  Rendered pages/info.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 53ms (Views: 50.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:42:40 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 63ms (Views: 62.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pages/info" for 127.0.0.1 at 2017-05-13 11:42:41 +0200
+Processing by PagesController#info as HTML
+  Rendering pages/info.html.erb within layouts/application
+  Rendered pages/info.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 56ms (Views: 53.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/info" for 127.0.0.1 at 2017-05-13 11:42:43 +0200
+Processing by PagesController#info as HTML
+  Rendering pages/info.html.erb within layouts/application
+  Rendered pages/info.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 47ms (Views: 44.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/info" for 127.0.0.1 at 2017-05-13 11:42:44 +0200
+Processing by PagesController#info as HTML
+  Rendering pages/info.html.erb within layouts/application
+  Rendered pages/info.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 53ms (Views: 51.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:42:45 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 53ms (Views: 52.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pages/info" for 127.0.0.1 at 2017-05-13 11:42:46 +0200
+Processing by PagesController#info as HTML
+  Rendering pages/info.html.erb within layouts/application
+  Rendered pages/info.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 52ms (Views: 49.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 11:43:06 +0200
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:43:06 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 46ms (Views: 45.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:43:11 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 57ms (Views: 56.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pages/info" for 127.0.0.1 at 2017-05-13 11:43:12 +0200
+Processing by PagesController#info as HTML
+  Rendering pages/info.html.erb within layouts/application
+  Rendered pages/info.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 51ms (Views: 49.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:43:13 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 57ms (Views: 56.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pages/info" for 127.0.0.1 at 2017-05-13 11:43:13 +0200
+Processing by PagesController#info as HTML
+  Rendering pages/info.html.erb within layouts/application
+  Rendered pages/info.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 56ms (Views: 54.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 11:43:14 +0200
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:43:14 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 52ms (Views: 50.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pages/info" for 127.0.0.1 at 2017-05-13 11:43:15 +0200
+Processing by PagesController#info as HTML
+  Rendering pages/info.html.erb within layouts/application
+  Rendered pages/info.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 48ms (Views: 45.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:43:16 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 56ms (Views: 54.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pages/info" for 127.0.0.1 at 2017-05-13 11:43:17 +0200
+Processing by PagesController#info as HTML
+  Rendering pages/info.html.erb within layouts/application
+  Rendered pages/info.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 60ms (Views: 58.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/info" for 127.0.0.1 at 2017-05-13 11:43:51 +0200
+Processing by PagesController#info as HTML
+  Rendering pages/info.html.erb within layouts/application
+  Rendered pages/info.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 48ms (Views: 45.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 11:43:52 +0200
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:43:52 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 52ms (Views: 51.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pages/info" for 127.0.0.1 at 2017-05-13 11:43:53 +0200
+Processing by PagesController#info as HTML
+  Rendering pages/info.html.erb within layouts/application
+  Rendered pages/info.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 50ms (Views: 47.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/info" for 127.0.0.1 at 2017-05-13 11:43:54 +0200
+Processing by PagesController#info as HTML
+  Rendering pages/info.html.erb within layouts/application
+  Rendered pages/info.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 52ms (Views: 50.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 11:43:55 +0200
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:43:55 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 54ms (Views: 52.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:43:56 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 56ms (Views: 55.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 11:43:56 +0200
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:43:56 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 62ms (Views: 61.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 11:45:19 +0200
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:45:19 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 46ms (Views: 45.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:45:20 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 56ms (Views: 54.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 11:45:21 +0200
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:45:21 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 55ms (Views: 53.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:45:22 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.3ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 53ms (Views: 52.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:45:25 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 49ms (Views: 48.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:46:26 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.1ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 63ms (Views: 58.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:46:27 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 52ms (Views: 51.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 11:46:28 +0200
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:46:28 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 50ms (Views: 49.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:46:29 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 56ms (Views: 55.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:57:13 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.1ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 57ms (Views: 51.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:57:27 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 46ms (Views: 44.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 11:57:28 +0200
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:57:28 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.4ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 63ms (Views: 61.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:57:29 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 54ms (Views: 53.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 11:57:30 +0200
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:57:30 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 54ms (Views: 53.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:57:30 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 57ms (Views: 56.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:58:15 +0200
+  
+SyntaxError (/Users/stephanie.kraaijkamp/projects/projects/railsgirls/config/routes.rb:2: syntax error, unexpected ( arg, expecting keyword_do or '{' or '('
+  root :to => redirect ('/pages')
+                        ^):
+  
+config/routes.rb:2: syntax error, unexpected ( arg, expecting keyword_do or '{' or '('
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:58:24 +0200
+  
+SyntaxError (/Users/stephanie.kraaijkamp/projects/projects/railsgirls/config/routes.rb:2: syntax error, unexpected ( arg, expecting keyword_do or '{' or '('
+  root :to => redirect ('/pages/info')
+                        ^):
+  
+config/routes.rb:2: syntax error, unexpected ( arg, expecting keyword_do or '{' or '('
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:59:36 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.1ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 52ms (Views: 47.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/pages/info" for 127.0.0.1 at 2017-05-13 11:59:38 +0200
+Processing by PagesController#info as HTML
+  Rendering pages/info.html.erb within layouts/application
+  Rendered pages/info.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 43ms (Views: 41.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:59:40 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 54ms (Views: 53.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 11:59:40 +0200
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:59:40 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 55ms (Views: 53.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pages/info" for 127.0.0.1 at 2017-05-13 11:59:41 +0200
+Processing by PagesController#info as HTML
+  Rendering pages/info.html.erb within layouts/application
+  Rendered pages/info.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 55ms (Views: 52.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/info" for 127.0.0.1 at 2017-05-13 11:59:53 +0200
+Processing by PagesController#info as HTML
+  Rendering pages/info.html.erb within layouts/application
+  Rendered pages/info.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 57ms (Views: 53.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:59:54 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.3ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 55ms (Views: 54.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 11:59:54 +0200
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:59:54 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.3ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 62ms (Views: 60.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pages/info" for 127.0.0.1 at 2017-05-13 11:59:55 +0200
+Processing by PagesController#info as HTML
+  Rendering pages/info.html.erb within layouts/application
+  Rendered pages/info.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 50ms (Views: 47.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:59:56 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 56ms (Views: 55.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 11:59:56 +0200
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:59:56 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 59ms (Views: 58.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:59:57 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.3ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 57ms (Views: 56.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pages/info" for 127.0.0.1 at 2017-05-13 11:59:58 +0200
+Processing by PagesController#info as HTML
+  Rendering pages/info.html.erb within layouts/application
+  Rendered pages/info.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 57ms (Views: 55.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 11:59:59 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 52ms (Views: 51.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas/3/edit" for 127.0.0.1 at 2017-05-13 12:01:59 +0200
+Processing by IdeasController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering ideas/edit.html.erb within layouts/application
+  Rendered ideas/_form.html.erb (3.6ms) [cache miss]
+  Rendered ideas/edit.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 49ms (Views: 47.1ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/ideas/3" for 127.0.0.1 at 2017-05-13 12:02:16 +0200
+Processing by IdeasController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zRtFMg+AqpH5V4y2m6SEviNOqOpkU8S6HDMM6mssIqfKcaLYyN0PxjZdzyie/ub7rzo6Z99nGQhHiAvcRn0viw==", "idea"=>{"name"=>"Teresa", "description"=>"Making an app for Klarnauts to give eachother shout outs and love messages", "picture"=>#<ActionDispatch::Http::UploadedFile:0x007f8888c7bc40 @tempfile=#<Tempfile:/var/folders/_1/yrk4xdsd31jfsm_3q95sy08187v28l/T/RackMultipart20170513-4378-i6egfj.jpg>, @original_filename="love-letter1.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"idea[picture]\"; filename=\"love-letter1.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Update Idea", "id"=>"3"}
+  [1m[36mIdea Load (0.3ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "ideas" SET "picture" = ?, "updated_at" = ? WHERE "ideas"."id" = ?[0m  [["picture", "love-letter1.jpg"], ["updated_at", "2017-05-13 10:02:16.203772"], ["id", 3]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/ideas/3
+Completed 302 Found in 12ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/ideas/3" for 127.0.0.1 at 2017-05-13 12:02:16 +0200
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mIdea Load (0.1ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering ideas/show.html.erb within layouts/application
+  Rendered ideas/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 43ms (Views: 41.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 12:02:18 +0200
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 12:02:18 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 49ms (Views: 48.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pages/info" for 127.0.0.1 at 2017-05-13 12:02:20 +0200
+Processing by PagesController#info as HTML
+  Rendering pages/info.html.erb within layouts/application
+  Rendered pages/info.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 45ms (Views: 42.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 12:02:21 +0200
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 12:02:21 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 62ms (Views: 61.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pages/info" for 127.0.0.1 at 2017-05-13 12:02:21 +0200
+Processing by PagesController#info as HTML
+  Rendering pages/info.html.erb within layouts/application
+  Rendered pages/info.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 54ms (Views: 52.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 12:02:22 +0200
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 12:02:22 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 50ms (Views: 49.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 13:46:33 +0200
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 13:46:33 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 66ms (Views: 64.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas/1/edit" for 127.0.0.1 at 2017-05-13 13:46:38 +0200
+Processing by IdeasController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mIdea Load (0.1ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ideas/edit.html.erb within layouts/application
+  Rendered ideas/_form.html.erb (2.7ms) [cache miss]
+  Rendered ideas/edit.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 51ms (Views: 49.9ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/ideas/1" for 127.0.0.1 at 2017-05-13 13:48:10 +0200
+Processing by IdeasController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"u02G8rsd85mZlmFphGpdx+/ow1VT83yD50xSI3iJpGM/cWCeEKJolqL9N6VWb6zgO8lOHLgHXKy+OYLbEsqJxA==", "idea"=>{"name"=>"Doggy Faves", "description"=>"Making an app with the cutest dogs in the world", "picture"=>#<ActionDispatch::Http::UploadedFile:0x007f8883630750 @tempfile=#<Tempfile:/var/folders/_1/yrk4xdsd31jfsm_3q95sy08187v28l/T/RackMultipart20170513-4378-4pe1zh.jpg>, @original_filename="doggies.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"idea[picture]\"; filename=\"doggies.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Update Idea", "id"=>"1"}
+  [1m[36mIdea Load (0.1ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "ideas" SET "name" = ?, "picture" = ?, "updated_at" = ? WHERE "ideas"."id" = ?[0m  [["name", "Doggy Faves"], ["picture", "doggies.jpg"], ["updated_at", "2017-05-13 11:48:10.449373"], ["id", 1]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/ideas/1
+Completed 302 Found in 9ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/ideas/1" for 127.0.0.1 at 2017-05-13 13:48:10 +0200
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mIdea Load (0.1ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ideas/show.html.erb within layouts/application
+  Rendered ideas/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 56ms (Views: 55.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 13:48:12 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 60ms (Views: 59.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas/2/edit" for 127.0.0.1 at 2017-05-13 13:48:36 +0200
+Processing by IdeasController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering ideas/edit.html.erb within layouts/application
+  Rendered ideas/_form.html.erb (2.3ms) [cache miss]
+  Rendered ideas/edit.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 61ms (Views: 59.5ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/ideas/2" for 127.0.0.1 at 2017-05-13 13:48:42 +0200
+Processing by IdeasController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"C6mQ89D9jVuerjRgakpsBy/aFj3nR82gkxOQr/nPIMgS1aLdLYLKfZQvwV/yYwwhZ9XRmMiuJwV0M6cWAkUF8Q==", "idea"=>{"name"=>"Stephanie ", "description"=>"Making an app with education ideas", "picture"=>#<ActionDispatch::Http::UploadedFile:0x007f888b898698 @tempfile=#<Tempfile:/var/folders/_1/yrk4xdsd31jfsm_3q95sy08187v28l/T/RackMultipart20170513-4378-1sifgzq.jpg>, @original_filename="learning.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"idea[picture]\"; filename=\"learning.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Update Idea", "id"=>"2"}
+  [1m[36mIdea Load (0.1ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "ideas" SET "picture" = ?, "updated_at" = ? WHERE "ideas"."id" = ?[0m  [["picture", "learning.jpg"], ["updated_at", "2017-05-13 11:48:42.994438"], ["id", 2]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/ideas/2
+Completed 302 Found in 9ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/ideas/2" for 127.0.0.1 at 2017-05-13 13:48:43 +0200
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mIdea Load (0.1ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering ideas/show.html.erb within layouts/application
+  Rendered ideas/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 45ms (Views: 43.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/ideas/2/edit" for 127.0.0.1 at 2017-05-13 13:48:44 +0200
+Processing by IdeasController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mIdea Load (0.1ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering ideas/edit.html.erb within layouts/application
+  Rendered ideas/_form.html.erb (2.7ms) [cache miss]
+  Rendered ideas/edit.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 49ms (Views: 48.4ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/ideas/2" for 127.0.0.1 at 2017-05-13 13:48:50 +0200
+Processing by IdeasController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YPwXXWrYZiQb1k4BVCPuMeJ++Q7yxouj7svTsOtDACt5gCVzl6chAhFXuz7MCo4XqnE+q90vYQYJ6+QJEMklEg==", "idea"=>{"name"=>"Nurture Learning", "description"=>"Making an app with education ideas"}, "commit"=>"Update Idea", "id"=>"2"}
+  [1m[36mIdea Load (0.1ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "ideas" SET "name" = ?, "updated_at" = ? WHERE "ideas"."id" = ?[0m  [["name", "Nurture Learning"], ["updated_at", "2017-05-13 11:48:50.980276"], ["id", 2]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/ideas/2
+Completed 302 Found in 5ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/ideas/2" for 127.0.0.1 at 2017-05-13 13:48:50 +0200
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mIdea Load (0.1ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering ideas/show.html.erb within layouts/application
+  Rendered ideas/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 43ms (Views: 41.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 13:48:52 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.3ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 48ms (Views: 47.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ideas/3/edit" for 127.0.0.1 at 2017-05-13 13:48:59 +0200
+Processing by IdeasController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering ideas/edit.html.erb within layouts/application
+  Rendered ideas/_form.html.erb (2.5ms) [cache miss]
+  Rendered ideas/edit.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 54ms (Views: 52.8ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/ideas/3" for 127.0.0.1 at 2017-05-13 13:49:44 +0200
+Processing by IdeasController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pR/Lj0S2JwXJ8KtNZmbM/f7IwVfLqIOWAYtDXG9CFamidSxlg+uCUgb66NNjPK64crxT2nCcXiRaMERqQhMYhQ==", "idea"=>{"name"=>"Spread the word", "description"=>"Making an app for Klarnauts to give eachother shout outs and love messages"}, "commit"=>"Update Idea", "id"=>"3"}
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "ideas" SET "name" = ?, "updated_at" = ? WHERE "ideas"."id" = ?[0m  [["name", "Spread the word"], ["updated_at", "2017-05-13 11:49:44.628233"], ["id", 3]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/ideas/3
+Completed 302 Found in 5ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/ideas/3" for 127.0.0.1 at 2017-05-13 13:49:44 +0200
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mIdea Load (0.1ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering ideas/show.html.erb within layouts/application
+  Rendered ideas/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 40ms (Views: 38.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 13:49:46 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 50ms (Views: 49.0ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/ideas/5" for 127.0.0.1 at 2017-05-13 13:49:50 +0200
+Processing by IdeasController#destroy as HTML
+  Parameters: {"authenticity_token"=>"iT7j48sUlqgDL1ZHkgBSQQMhrfAA9WZ/CQag/IjYDFiea42pNnvPVT5CZUpEf/HDO0oTm+QaMBjStVrMW5uD0A==", "id"=>"5"}
+  [1m[36mIdea Load (0.1ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "ideas" WHERE "ideas"."id" = ?[0m  [["id", 5]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/ideas
+Completed 302 Found in 6ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 13:49:50 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.5ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 47ms (Views: 46.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/ideas/4/edit" for 127.0.0.1 at 2017-05-13 13:49:53 +0200
+Processing by IdeasController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mIdea Load (0.1ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering ideas/edit.html.erb within layouts/application
+  Rendered ideas/_form.html.erb (2.4ms) [cache miss]
+  Rendered ideas/edit.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 48ms (Views: 47.1ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/ideas/4" for 127.0.0.1 at 2017-05-13 13:50:03 +0200
+Processing by IdeasController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AhR//b9RX7CJA3eGBmbdvBSIXbZTai/AyiyoWS3mAvRQEAIZVWJUuRYN0yRJgDqNn9j3k61dc2NuCzIwe5BUjg==", "idea"=>{"name"=>"Cross Department Learning", "description"=>"Share internally learning and teaching styles for better understanding of cross department learning"}, "commit"=>"Update Idea", "id"=>"4"}
+  [1m[36mIdea Load (0.1ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "ideas" SET "name" = ?, "updated_at" = ? WHERE "ideas"."id" = ?[0m  [["name", "Cross Department Learning"], ["updated_at", "2017-05-13 11:50:03.064697"], ["id", 4]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/ideas/4
+Completed 302 Found in 5ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/ideas/4" for 127.0.0.1 at 2017-05-13 13:50:03 +0200
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mIdea Load (0.1ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering ideas/show.html.erb within layouts/application
+  Rendered ideas/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 46ms (Views: 44.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 13:50:05 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 49ms (Views: 48.6ms | ActiveRecord: 0.2ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateComments (20170513115206)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_name" varchar, "body" text, "idea_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170513115206"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 13:54:23 +0200
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 614ms (Views: 593.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/ideas/4" for 127.0.0.1 at 2017-05-13 13:54:28 +0200
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering ideas/show.html.erb within layouts/application
+  Rendered ideas/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 86ms (Views: 78.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/ideas/1" for 127.0.0.1 at 2017-05-13 13:54:32 +0200
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mIdea Load (0.1ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ideas/show.html.erb within layouts/application
+  Rendered ideas/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 84ms (Views: 82.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 13:54:36 +0200
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 13:54:36 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 45ms (Views: 43.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 13:56:08 +0200
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 13:56:18 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.1ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 63ms (Views: 56.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/ideas/1" for 127.0.0.1 at 2017-05-13 13:56:22 +0200
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ideas/show.html.erb within layouts/application
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."idea_id" = ?[0m  [["idea_id", 1]]
+  Rendered comments/_form.html.erb (48.4ms) [cache miss]
+  Rendered ideas/show.html.erb within layouts/application (52.6ms)
+Completed 200 OK in 141ms (Views: 90.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 13:56:33 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 49ms (Views: 48.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 13:57:25 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 43ms (Views: 42.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas/1" for 127.0.0.1 at 2017-05-13 13:57:27 +0200
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mIdea Load (0.1ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ideas/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."idea_id" = ?[0m  [["idea_id", 1]]
+  Rendered comments/_form.html.erb (222.7ms)
+  Rendered ideas/show.html.erb within layouts/application (226.5ms)
+Completed 500 Internal Server Error in 233ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x007fa773a2d600>:0x007fa76e590908>):
+    20:     <%= form.label :body %>
+    21:     <%= form.text_area :body, id: :comment_body %>
+    22:   </div>
+    23:   <%= f.hidden_field :idea_id %>
+    24: 
+    25:   <div class="field">
+    26:     <%= form.label :idea_id %>
+  
+app/views/comments/_form.html.erb:23:in `block in _app_views_comments__form_html_erb___1403204354006552906_70178539182620'
+app/views/comments/_form.html.erb:1:in `_app_views_comments__form_html_erb___1403204354006552906_70178539182620'
+app/views/ideas/show.html.erb:25:in `_app_views_ideas_show_html_erb___4176589892259199409_70178543751320'
+app/controllers/ideas_controller.rb:10:in `show'
+Started GET "/ideas/1" for 127.0.0.1 at 2017-05-13 13:57:59 +0200
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mIdea Load (0.1ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ideas/show.html.erb within layouts/application
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."idea_id" = ?[0m  [["idea_id", 1]]
+  Rendered comments/_form.html.erb (254.8ms)
+  Rendered ideas/show.html.erb within layouts/application (257.9ms)
+Completed 500 Internal Server Error in 264ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x007fa773a2d600>:0x007fa773a78128>):
+    20:     <%= form.label :body %>
+    21:     <%= form.text_area :body, id: :comment_body %>
+    22:   </div>
+    23:   <%= f.hidden_field :idea_id %>
+    24: 
+    25:   <div class="actions">
+    26:     <%= form.submit %>
+  
+app/views/comments/_form.html.erb:23:in `block in _app_views_comments__form_html_erb___1403204354006552906_70178588402480'
+app/views/comments/_form.html.erb:1:in `_app_views_comments__form_html_erb___1403204354006552906_70178588402480'
+app/views/ideas/show.html.erb:25:in `_app_views_ideas_show_html_erb___4176589892259199409_70178588358240'
+app/controllers/ideas_controller.rb:10:in `show'
+Started GET "/ideas/1" for 127.0.0.1 at 2017-05-13 13:58:31 +0200
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ideas/show.html.erb within layouts/application
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."idea_id" = ?[0m  [["idea_id", 1]]
+  Rendered comments/_form.html.erb (217.8ms)
+  Rendered ideas/show.html.erb within layouts/application (221.8ms)
+Completed 500 Internal Server Error in 280ms (ActiveRecord: 1.6ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x007fcf429dc740>:0x007fcf41ea0958>):
+    20:     <%= form.label :body %>
+    21:     <%= form.text_area :body, id: :comment_body %>
+    22:   </div>
+    23:   <%= f.hidden_field :idea_id %>
+    24: 
+    25:   <div class="actions">
+    26:     <%= form.submit %>
+  
+app/views/comments/_form.html.erb:23:in `block in _app_views_comments__form_html_erb___118037513796625137_70264075993240'
+app/views/comments/_form.html.erb:1:in `_app_views_comments__form_html_erb___118037513796625137_70264075993240'
+app/views/ideas/show.html.erb:25:in `_app_views_ideas_show_html_erb___4132297412541509756_70264076184000'
+app/controllers/ideas_controller.rb:10:in `show'
+Started GET "/ideas/1" for 127.0.0.1 at 2017-05-13 13:58:32 +0200
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mIdea Load (0.1ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ideas/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."idea_id" = ?[0m  [["idea_id", 1]]
+  Rendered comments/_form.html.erb (176.4ms)
+  Rendered ideas/show.html.erb within layouts/application (179.3ms)
+Completed 500 Internal Server Error in 186ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x007fcf429dc740>:0x007fcf41429a88>):
+    20:     <%= form.label :body %>
+    21:     <%= form.text_area :body, id: :comment_body %>
+    22:   </div>
+    23:   <%= f.hidden_field :idea_id %>
+    24: 
+    25:   <div class="actions">
+    26:     <%= form.submit %>
+  
+app/views/comments/_form.html.erb:23:in `block in _app_views_comments__form_html_erb___118037513796625137_70264077143840'
+app/views/comments/_form.html.erb:1:in `_app_views_comments__form_html_erb___118037513796625137_70264077143840'
+app/views/ideas/show.html.erb:25:in `_app_views_ideas_show_html_erb___4132297412541509756_70264064918160'
+app/controllers/ideas_controller.rb:10:in `show'
+Started GET "/ideas/1" for 127.0.0.1 at 2017-05-13 14:03:03 +0200
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mIdea Load (0.1ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ideas/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."idea_id" = ?[0m  [["idea_id", 1]]
+  Rendered comments/_form.html.erb (184.2ms)
+  Rendered ideas/show.html.erb within layouts/application (187.4ms)
+Completed 500 Internal Server Error in 219ms (ActiveRecord: 1.4ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x007fcf424006f0>:0x007fcf423fa4f8>):
+    20:     <%= form.label :body %>
+    21:     <%= form.text_area :body, id: :comment_body %>
+    22:   </div>
+    23:   <%= f.hidden_field :idea_id %>
+    24: 
+    25:   <div class="actions">
+    26:     <%= form.submit %>
+  
+app/views/comments/_form.html.erb:23:in `block in _app_views_comments__form_html_erb___118037513796625137_70264065197100'
+app/views/comments/_form.html.erb:1:in `_app_views_comments__form_html_erb___118037513796625137_70264065197100'
+app/views/ideas/show.html.erb:25:in `_app_views_ideas_show_html_erb___4132297412541509756_70264073199320'
+app/controllers/ideas_controller.rb:10:in `show'
+Started GET "/ideas/1" for 127.0.0.1 at 2017-05-13 14:03:24 +0200
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mIdea Load (0.1ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ideas/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."idea_id" = ?[0m  [["idea_id", 1]]
+  Rendered comments/_form.html.erb (1.9ms) [cache miss]
+  Rendered ideas/show.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 757ms (Views: 754.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ideas/1" for 127.0.0.1 at 2017-05-13 14:03:51 +0200
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mIdea Load (0.1ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ideas/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."idea_id" = ?[0m  [["idea_id", 1]]
+  Rendered comments/_form.html.erb (247.7ms)
+  Rendered ideas/show.html.erb within layouts/application (251.7ms)
+Completed 500 Internal Server Error in 258ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x007fcf424006f0>:0x007fcf41595390>):
+    22:   </div>
+    23: 
+    24:   <div class="field">
+    25:     <%= f.label :idea_id %><br>
+    26:     <%= f.number_field :idea_id %>
+    27:   </div>
+    28: 
+  
+app/views/comments/_form.html.erb:25:in `block in _app_views_comments__form_html_erb___118037513796625137_70264065366140'
+app/views/comments/_form.html.erb:1:in `_app_views_comments__form_html_erb___118037513796625137_70264065366140'
+app/views/ideas/show.html.erb:25:in `_app_views_ideas_show_html_erb___4132297412541509756_70264065659040'
+app/controllers/ideas_controller.rb:10:in `show'
+Started GET "/ideas/1" for 127.0.0.1 at 2017-05-13 14:04:07 +0200
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ideas/show.html.erb within layouts/application
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."idea_id" = ?[0m  [["idea_id", 1]]
+  Rendered comments/_form.html.erb (1.4ms) [cache miss]
+  Rendered ideas/show.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 52ms (Views: 49.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/comments" for 127.0.0.1 at 2017-05-13 14:04:26 +0200
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fFr/FnSS0OCFSHZu0jWxLiNKf97djv5y+aKy5yqEqBZrD5Fcif2JHbglRWMEShKsGyHBtTlhqBUiEUjX+ccnng==", "comment"=>{"user_name"=>"DoggyLovaah", "body"=>"Best idea ever! <3"}, "commit"=>"Create Comment"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering comments/new.html.erb within layouts/application
+  Rendered comments/_form.html.erb (1.6ms) [cache miss]
+  Rendered comments/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 46ms (Views: 43.7ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/comments" for 127.0.0.1 at 2017-05-13 14:04:34 +0200
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yw7g4OS1jTPAlMHKbyJ2LzImWI3rQuhBPXpc/jQWlOXcW46qGdrUzv358se5XdWtCk3m5g+tvibmyabO51UbbQ==", "comment"=>{"user_name"=>"DoggyLovaah", "body"=>"Best idea ever! <3"}, "commit"=>"Create Comment"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering comments/new.html.erb within layouts/application
+  Rendered comments/_form.html.erb (1.6ms) [cache miss]
+  Rendered comments/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 46ms (Views: 43.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 14:04:35 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 52ms (Views: 51.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 14:04:46 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 42ms (Views: 41.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 14:04:49 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 49ms (Views: 48.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 14:04:50 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 57ms (Views: 56.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas/1" for 127.0.0.1 at 2017-05-13 14:04:51 +0200
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mIdea Load (0.1ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ideas/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."idea_id" = ?[0m  [["idea_id", 1]]
+  Rendered comments/_form.html.erb (189.5ms)
+  Rendered ideas/show.html.erb within layouts/application (192.7ms)
+Completed 500 Internal Server Error in 199ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x007fcf424006f0>:0x007fcf4260f5b8>):
+    21:     <%= form.text_area :body, id: :comment_body %>
+    22:   </div>
+    23: 
+    24:   <%= f.hidden_field :idea_id %>
+    25: 
+    26:   <div class="actions">
+    27:     <%= form.submit %>
+  
+app/views/comments/_form.html.erb:24:in `block in _app_views_comments__form_html_erb___118037513796625137_70264142847600'
+app/views/comments/_form.html.erb:1:in `_app_views_comments__form_html_erb___118037513796625137_70264142847600'
+app/views/ideas/show.html.erb:25:in `_app_views_ideas_show_html_erb___4132297412541509756_70264074301660'
+app/controllers/ideas_controller.rb:10:in `show'
+Started GET "/ideas/1" for 127.0.0.1 at 2017-05-13 14:07:24 +0200
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mIdea Load (0.1ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ideas/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."idea_id" = ?[0m  [["idea_id", 1]]
+  Rendered comments/_form.html.erb (5.0ms) [cache miss]
+  Rendered ideas/show.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 60ms (Views: 57.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/comments" for 127.0.0.1 at 2017-05-13 14:07:42 +0200
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"H94T/ozkos4B6qDEt/6eA5rm5c7XSq1YOz/JqSFPwYYIi320cYv7MzyHk8lhgT2Boo1bpTOl+z/gjDOZ8gxODg==", "comment"=>{"user_name"=>"DoggyeLovaahh", "body"=>"Best idea ever!", "idea_id"=>"1"}, "commit"=>"Create Comment"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIdea Load (0.1ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "comments" ("user_name", "body", "idea_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_name", "DoggyeLovaahh"], ["body", "Best idea ever!"], ["idea_id", 1], ["created_at", "2017-05-13 12:07:42.988551"], ["updated_at", "2017-05-13 12:07:42.988551"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/comments/1
+Completed 302 Found in 7ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/comments/1" for 127.0.0.1 at 2017-05-13 14:07:43 +0200
+Processing by CommentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering comments/show.html.erb within layouts/application
+  Rendered comments/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 51ms (Views: 50.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 14:08:36 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 73ms (Views: 72.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas/1" for 127.0.0.1 at 2017-05-13 14:08:46 +0200
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mIdea Load (0.1ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ideas/show.html.erb within layouts/application
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."idea_id" = ?[0m  [["idea_id", 1]]
+  Rendered comments/_form.html.erb (1.6ms) [cache miss]
+  Rendered ideas/show.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 46ms (Views: 43.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ideas/1" for 127.0.0.1 at 2017-05-13 14:10:48 +0200
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mIdea Load (0.1ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ideas/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."idea_id" = ?[0m  [["idea_id", 1]]
+  Rendered comments/_form.html.erb (1.7ms) [cache miss]
+  Rendered ideas/show.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 61ms (Views: 58.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 14:10:49 +0200
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 14:10:49 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 52ms (Views: 51.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 14:10:50 +0200
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 14:10:50 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 51ms (Views: 50.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 14:11:19 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.3ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 67ms (Views: 66.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 14:13:12 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 45ms (Views: 44.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 14:14:30 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 48ms (Views: 47.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 14:16:29 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.8ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 46ms (Views: 45.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 14:17:52 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 45ms (Views: 43.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas/1" for 127.0.0.1 at 2017-05-13 14:18:06 +0200
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ideas/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."idea_id" = ?[0m  [["idea_id", 1]]
+  Rendered comments/_form.html.erb (2.0ms) [cache miss]
+  Rendered ideas/show.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 50ms (Views: 47.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 14:18:08 +0200
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 14:18:08 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 44ms (Views: 43.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 14:18:59 +0200
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 14:18:59 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 47ms (Views: 45.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 14:19:25 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 55ms (Views: 54.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 14:22:08 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 1601ms (Views: 1600.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 14:22:59 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 1943ms (Views: 1942.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2017-05-13 14:23:24 +0200
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 1475ms (Views: 1474.3ms | ActiveRecord: 0.2ms)
+
+
